@@ -1,0 +1,188 @@
+--- Running ipconfig --- 
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet 2:
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe80::fda:2ad8:a628:856e%42
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe80::96a7:db23:70a6:daf1%12
+   IPv4 Address. . . . . . . . . . . : 192.168.0.132
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.0.1
+
+Ethernet adapter vEthernet (WSL (Hyper-V firewall)):
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe80::db46:6f13:daa:e551%49
+   IPv4 Address. . . . . . . . . . . : 172.20.64.1
+   Subnet Mask . . . . . . . . . . . : 255.255.240.0
+   Default Gateway . . . . . . . . . : 
+--- Running netstat -ano --- 
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State           PID
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       1340
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:5040           0.0.0.0:0              LISTENING       7860
+  TCP    0.0.0.0:5432           0.0.0.0:0              LISTENING       6484
+  TCP    0.0.0.0:6646           0.0.0.0:0              LISTENING       6340
+  TCP    0.0.0.0:7680           0.0.0.0:0              LISTENING       17336
+  TCP    0.0.0.0:49664          0.0.0.0:0              LISTENING       1020
+  TCP    0.0.0.0:49665          0.0.0.0:0              LISTENING       360
+  TCP    0.0.0.0:49666          0.0.0.0:0              LISTENING       1744
+  TCP    0.0.0.0:49667          0.0.0.0:0              LISTENING       2312
+  TCP    0.0.0.0:49668          0.0.0.0:0              LISTENING       3600
+  TCP    0.0.0.0:49671          0.0.0.0:0              LISTENING       916
+  TCP    0.0.0.0:51776          0.0.0.0:0              LISTENING       14532
+  TCP    0.0.0.0:57621          0.0.0.0:0              LISTENING       14532
+  TCP    127.0.0.1:7768         0.0.0.0:0              LISTENING       14532
+  TCP    127.0.0.1:24830        0.0.0.0:0              LISTENING       4148
+  TCP    172.20.64.1:139        0.0.0.0:0              LISTENING       4
+  TCP    192.168.0.132:139      0.0.0.0:0              LISTENING       4
+  TCP    192.168.0.132:49710    3.75.168.79:443        ESTABLISHED     11832
+  TCP    192.168.0.132:49714    3.75.168.79:443        ESTABLISHED     11832
+  TCP    192.168.0.132:51787    104.199.65.9:4070      ESTABLISHED     14532
+  TCP    192.168.0.132:51810    4.207.247.138:443      ESTABLISHED     5140
+  TCP    192.168.0.132:51831    35.186.224.41:443      ESTABLISHED     8632
+  TCP    192.168.0.132:55275    20.238.236.234:443     ESTABLISHED     5008
+  TCP    192.168.0.132:56024    9.141.5.6:443          ESTABLISHED     12372
+  TCP    192.168.0.132:57076    35.186.224.24:443      ESTABLISHED     8632
+  TCP    192.168.0.132:57500    102.132.104.61:80      ESTABLISHED     13892
+  TCP    192.168.0.132:57787    23.196.227.231:443     CLOSE_WAIT      9708
+  TCP    192.168.0.132:57788    23.196.227.236:443     CLOSE_WAIT      9708
+  TCP    192.168.0.132:57794    40.104.15.2:443        ESTABLISHED     9708
+  TCP    192.168.0.132:57802    13.107.253.55:443      CLOSE_WAIT      9708
+  TCP    192.168.0.132:57828    140.82.114.25:443      ESTABLISHED     5008
+  TCP    192.168.0.132:57916    52.123.243.152:443     ESTABLISHED     12372
+  TCP    192.168.0.132:57978    104.22.67.229:443      ESTABLISHED     5008
+  TCP    192.168.0.132:57985    13.89.178.26:443       ESTABLISHED     5008
+  TCP    192.168.0.132:58006    35.186.224.24:443      TIME_WAIT       0
+  TCP    192.168.0.132:58012    20.190.147.7:443       TIME_WAIT       0
+  TCP    192.168.0.132:58015    192.168.0.1:53         TIME_WAIT       0
+  TCP    192.168.0.132:58017    13.107.21.239:443      ESTABLISHED     5008
+  TCP    192.168.0.132:58018    192.168.0.1:53         TIME_WAIT       0
+  TCP    192.168.0.132:58019    192.168.0.1:53         TIME_WAIT       0
+  TCP    192.168.0.132:58020    192.168.0.1:53         TIME_WAIT       0
+  TCP    192.168.0.132:58021    192.168.0.1:53         TIME_WAIT       0
+  TCP    192.168.0.132:58022    35.186.224.24:443      ESTABLISHED     8632
+  TCP    192.168.0.132:58023    192.168.0.1:53         TIME_WAIT       0
+  TCP    192.168.0.132:58024    192.168.0.1:53         TIME_WAIT       0
+  TCP    192.168.0.132:58025    2.17.169.45:80         TIME_WAIT       0
+  TCP    192.168.0.132:58026    142.251.47.67:80       TIME_WAIT       0
+  TCP    192.168.0.132:58028    192.168.0.1:53         TIME_WAIT       0
+  TCP    192.168.0.132:58032    20.42.73.25:443        ESTABLISHED     4752
+  TCP    192.168.0.132:58034    192.168.0.1:53         TIME_WAIT       0
+  TCP    192.168.0.132:58035    192.168.0.1:53         TIME_WAIT       0
+  TCP    192.168.56.1:139       0.0.0.0:0              LISTENING       4
+  TCP    [::]:135               [::]:0                 LISTENING       1340
+  TCP    [::]:445               [::]:0                 LISTENING       4
+  TCP    [::]:5432              [::]:0                 LISTENING       6484
+  TCP    [::]:7680              [::]:0                 LISTENING       17336
+  TCP    [::]:49664             [::]:0                 LISTENING       1020
+  TCP    [::]:49665             [::]:0                 LISTENING       360
+  TCP    [::]:49666             [::]:0                 LISTENING       1744
+  TCP    [::]:49667             [::]:0                 LISTENING       2312
+  TCP    [::]:49668             [::]:0                 LISTENING       3600
+  TCP    [::]:49671             [::]:0                 LISTENING       916
+  TCP    [::1]:49669            [::]:0                 LISTENING       4780
+  UDP    0.0.0.0:53             *:*                                    3832
+  UDP    0.0.0.0:1900           *:*                                    14532
+  UDP    0.0.0.0:1900           *:*                                    14532
+  UDP    0.0.0.0:1900           *:*                                    14532
+  UDP    0.0.0.0:5050           *:*                                    7860
+  UDP    0.0.0.0:5353           *:*                                    14532
+  UDP    0.0.0.0:5353           *:*                                    14532
+  UDP    0.0.0.0:5353           *:*                                    14532
+  UDP    0.0.0.0:5353           *:*                                    9740
+  UDP    0.0.0.0:5353           *:*                                    9740
+  UDP    0.0.0.0:5353           *:*                                    14532
+  UDP    0.0.0.0:5353           *:*                                    2448
+  UDP    0.0.0.0:5353           *:*                                    14532
+  UDP    0.0.0.0:5353           *:*                                    14532
+  UDP    0.0.0.0:5353           *:*                                    9740
+  UDP    0.0.0.0:5353           *:*                                    14532
+  UDP    0.0.0.0:5353           *:*                                    9740
+  UDP    0.0.0.0:5353           *:*                                    14532
+  UDP    0.0.0.0:5353           *:*                                    9740
+  UDP    0.0.0.0:5353           *:*                                    14532
+  UDP    0.0.0.0:5353           *:*                                    9740
+  UDP    0.0.0.0:5355           *:*                                    2448
+  UDP    0.0.0.0:6646           *:*                                    6340
+  UDP    0.0.0.0:55359          172.217.148.106:443                    5008
+  UDP    0.0.0.0:57621          *:*                                    14532
+  UDP    0.0.0.0:59623          *:*                                    3832
+  UDP    0.0.0.0:59624          *:*                                    3832
+  UDP    0.0.0.0:61095          35.186.224.24:443                      8632
+  UDP    0.0.0.0:61121          *:*                                    14532
+  UDP    0.0.0.0:61122          *:*                                    14532
+  UDP    0.0.0.0:61123          *:*                                    14532
+  UDP    0.0.0.0:61476          *:*                                    2448
+  UDP    0.0.0.0:65489          142.251.47.206:443                     5008
+  UDP    127.0.0.1:1900         *:*                                    6780
+  UDP    127.0.0.1:49664        127.0.0.1:49664                        4580
+  UDP    127.0.0.1:59794        *:*                                    6780
+  UDP    172.20.64.1:137        *:*                                    4
+  UDP    172.20.64.1:138        *:*                                    4
+  UDP    172.20.64.1:1900       *:*                                    6780
+  UDP    172.20.64.1:59795      *:*                                    6780
+  UDP    192.168.0.132:137      *:*                                    4
+  UDP    192.168.0.132:138      *:*                                    4
+  UDP    192.168.0.132:1900     *:*                                    6780
+  UDP    192.168.0.132:59793    *:*                                    6780
+  UDP    192.168.56.1:137       *:*                                    4
+  UDP    192.168.56.1:138       *:*                                    4
+  UDP    192.168.56.1:1900      *:*                                    6780
+  UDP    192.168.56.1:59792     *:*                                    6780
+  UDP    [::]:5353              *:*                                    14532
+  UDP    [::]:5353              *:*                                    9740
+  UDP    [::]:5353              *:*                                    14532
+  UDP    [::]:5353              *:*                                    14532
+  UDP    [::]:5353              *:*                                    9740
+  UDP    [::]:5353              *:*                                    9740
+  UDP    [::]:5353              *:*                                    2448
+  UDP    [::]:5353              *:*                                    14532
+  UDP    [::]:5353              *:*                                    14532
+  UDP    [::]:5353              *:*                                    14532
+  UDP    [::]:5355              *:*                                    2448
+  UDP    [::]:59625             *:*                                    3832
+  UDP    [::]:61476             *:*                                    2448
+  UDP    [::1]:1900             *:*                                    6780
+  UDP    [::1]:59790            *:*                                    6780
+  UDP    [fe80::fda:2ad8:a628:856e%42]:1900  *:*                                    6780
+  UDP    [fe80::fda:2ad8:a628:856e%42]:59788  *:*                                    6780
+  UDP    [fe80::96a7:db23:70a6:daf1%12]:1900  *:*                                    6780
+  UDP    [fe80::96a7:db23:70a6:daf1%12]:59789  *:*                                    6780
+  UDP    [fe80::db46:6f13:daa:e551%49]:1900  *:*                                    6780
+  UDP    [fe80::db46:6f13:daa:e551%49]:59791  *:*                                    6780
+--- Running ping 8.8.8.8 --- 
+
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=35ms TTL=118
+Reply from 8.8.8.8: bytes=32 time=47ms TTL=118
+Reply from 8.8.8.8: bytes=32 time=22ms TTL=118
+Reply from 8.8.8.8: bytes=32 time=24ms TTL=118
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 22ms, Maximum = 47ms, Average = 32ms
